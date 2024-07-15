@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+body{
+    margin: 0px;
+    padding: 0px;
+}
+    .menu_bar{
+    background-color: gold;
+    height:50px;
+    width:100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 10px;
+}
+.menu_bar ul{
+    display:flex;
+justify-content: space-around;
+margin:0px 50px;
+padding:0px 10px;
+list-style: none;
+
+   
+}
+.menu_bar ul li{
+    padding:0px 28px;
+    position: relative;
+}
+.menu_bar ul li a{
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu_bar ul li a:hover{
+    color:greenyellow;
+}
+.dropdown-1{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown-1{
+    display: block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color: gold;
+    margin:6px 11px;
+    width:120px;
+}
+.dropdown-1 ul{
+    display: block;
+    margin:10px 0px;
+    
+}
+.dropdown-1 ul li{
+    width:40px;
+    margin:0px -20px;
+   
+    align-items: center;
+}
+.dropdown-1 ul li a{
+    color:black;
+}
+.dropdown-2{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown-2{
+    display: block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color: gold;
+    margin:6px 30px;
+    width:160px;
+}
+.dropdown-2 ul{
+    display: block;
+    margin:10px 0px;
+    
+}
+.dropdown-2 ul li{
+    width:100px;
+    margin:0px -10px;
+}
+.dropdown-2 ul li a{
+    color:black;
+}
+.dropdown-3{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown-3{
+    display: block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color: gold;
+    margin:6px 30px;
+    width:140px;
+}
+.dropdown-3 ul{
+    display: block;
+    margin:10px 0px;
+    padding:0px 20px;
+}
+.dropdown-3 ul li{
+    width:60px;
+    margin:0px -20px;
+}
+.dropdown-3 ul li a{
+    color:black;
+}
+.dropdown-4{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown-4{
+    display: block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color: gold;
+    margin:6px 30px;
+    padding:0px 0px;
+    width:160px;
+   
+   
+}
+.dropdown-4 ul{
+    display: block;
+    margin:10px 0px;
+}
+.dropdown-4 ul li{
+    width:100px;
+    margin:0px -10px; 
+}
+.dropdown-4 ul li a{
+    color:black;
+}
+.search{
+border:2px solid black;
+border-radius: 10px;
+height:20px;
+width:auto;
+
+
+}
+.btn{
+
+border:2px white;
+background-color:rgb(213, 212, 212);
+color: burlywood;
+margin-right:10px;
+
+}
+  
+.card{
+        background-color: rgba(255, 255, 255, 0.881);
+        border:2px solid black;
+    }
+    .question_no{
+        background-color: rgb(145, 144, 144);
+    }
+    .waste{
+        color:white;
+    }
+</style>
+<% let j=1 %>
+<body>
+    <div class="navbar">
+        <nav class="menu_bar">
+            <img src="logo-removebg-preview.png" class="logo" width="40px">
+            <ul>
+            <li><a href="http://127.0.0.1:5501/">Home</a>
+            <li><a href="#">aptitude</a>
+                <div class="dropdown-1">
+                <ul >
+                    <li><a href="http://localhost:8080/questions">aptitude</a></li>
+                    <br>
+                    <li><a href="#">reasoning</a></li>
+                    <br>
+                    <li><a href="http://localhost:8080/logicals">logical</a></li>
+                    <br>
+                    <li><a href="#">test</a></li>
+                 </ul>
+                 </div>
+              </li>
+            <li><a href="#">verbal & non verbal</a>
+                <div class="dropdown-2">
+                <ul>
+                    <li><a href="#">synonym</a></li>
+                    <br>
+                    <li><a href="#">antonym</a></li>
+                    <br>
+                    <li><a href="#">phrase & verbs</a></li>
+                </ul>
+                </div>
+        </li>
+            <li><a href="#">clock problem</a>
+                <div class="dropdown-3">
+                <ul >
+                    <li><a href="#">time & age</a></li>
+                    <br>
+                    <li><a href="#">difference</a></li>
+                    <br>
+                    <li><a href="#">architectural</a></li>
+                 </ul>
+                </div>
+            </li>
+            <li><a href="#">numerical approach</a>
+                <div  class="dropdown-4">
+                <ul>
+                <li><a href="#">number system</a></li>
+                <br>
+                <li><a href="#">square & cube</a></li>
+                <br>
+                <li><a href="#">root</a></li>
+        </ul>
+    </div>
+    </li>
+        <div class="small">
+             <input class="search" type="text" placeholder="Search">
+        </div>
+        </ul>
+    </nav>
+    </div>
+    <h1>C Language</h1>
+    <% for(let question of questions){ %>
+        <div class="card">
+          <% for(let i=j;i<=j;i++){ %>
+            <div class="question_no">
+            <p>question.<%=i%></p>
+        </div>
+          <%}%>
+            <p><%=question.question%></p>
+            <p><%=question.option1%></p>
+            <p><%=question.option2%></p>
+            <p><%=question.option3%></p>
+            <p><%=question.option4%></p>
+            <p class="answer">ans=<%=question.c_option%></p>
+        </div>
+        <br>
+        <div class="waste"> <%=j++%></div>
+       
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    .container{
+        justify-content: center;
+        margin: 60px 500px;
+        width:400px;
+        height:400px;
+        background-image: url("background.jpg");
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+        overflow: hidden;
+    }
+    .form{
+        margin: 50px 118px;
+        
+        gap:5px;
+    }
+    h1{
+        margin:10px 118px;
+        color:white;
+    }
+    .btn{
+     margin: 26px 2px;
+    padding: 3px 58px;
+    border-radius: 10px;
+
+    }
+    .btn:hover{
+        background-color: rgb(0, 148, 206);
+        cursor: pointer;
+    }
+    .user{
+        padding:5px;
+        color:white;
+      
+    }
+    .pass{
+        padding:5px;
+        color:white;
+      
+    }
+    .search{
+    border:2px solid black;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <form action="/post" method="post">
+        <div class="container">
+            <h1>sign in page</h1>
+        <div class="form">
+                <div class="user">
+                <label >Username/Email ID:</label>
+                <input type="text" placeholder="Email ID" class="search">
+            </div>
+            <br>
+            <div class="pass">
+                <label>Password-</label>
+                <input type="password" placeholder="password" class="search" >
+            </div>
+            <br>
+            <div class="pass">
+                <label>confirmation-</label>
+                <input type="password" placeholder="confirm password" class="search" >
+            </div>
+            <button class="btn">SUBMIT</button>
+        </div>
+        </div>
+    </form>
+
+</body>
+</html>

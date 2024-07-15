@@ -1,0 +1,382 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+
+.menu_bar{
+    background-color: gold;
+    height:50px;
+    width:100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 10px;
+}
+.menu_bar ul{
+    display:flex;
+justify-content: space-around;
+margin:-40px 50px;
+padding:0px 10px;
+list-style: none;
+
+   
+}
+.menu_bar ul li{
+    padding:0px 28px;
+    position: relative;
+}
+.menu_bar ul li a{
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu_bar ul li a:hover{
+    color:greenyellow;
+}
+.dropdown-1{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown-1{
+    display: block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color:gold;
+    margin:6px 11px;
+    width:120px;
+}
+.dropdown-1 ul{
+    display: block;
+    margin:10px 0px;
+    
+}
+.dropdown-1 ul li{
+    width:40px;
+    margin:0px -20px;
+   
+    align-items: center;
+}
+.dropdown-1 ul li a{
+    color:black;
+}
+.dropdown-2{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown-2{
+    display: block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color: gold;
+    margin:6px 30px;
+    width:160px;
+}
+.dropdown-2 ul{
+    display: block;
+    margin:10px 0px;
+    
+}
+.dropdown-2 ul li{
+    width:100px;
+    margin:0px -10px;
+}
+.dropdown-2 ul li a{
+    color:black;
+}
+.dropdown-3{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown-3{
+    display: block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color: gold;
+    margin:6px 30px;
+    width:140px;
+}
+.dropdown-3 ul{
+    display: block;
+    margin:10px 0px;
+    padding:0px 20px;
+}
+.dropdown-3 ul li{
+    width:60px;
+    margin:0px -20px;
+}
+.dropdown-3 ul li a{
+    color:black;
+}
+.dropdown-4{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown-4{
+    display: block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color: gold;
+    margin:6px 30px;
+    padding:0px 0px;
+    width:160px;
+   
+   
+}
+.dropdown-4 ul{
+    display: block;
+    margin:10px 0px;
+}
+.dropdown-4 ul li{
+    width:100px;
+    margin:0px -10px; 
+}
+.dropdown-4 ul li a{
+    color:black;
+}
+.search{
+border:2px solid black;
+border-radius: 10px;
+height:20px;
+width:auto;
+
+
+}
+.btn{
+
+border:2px white;
+background-color:rgb(213, 212, 212);
+color: burlywood;
+margin-right:10px;
+
+}
+.small{
+padding:3px 0px;
+margin-right:10px;
+}
+.logo{
+padding:0px 0px;
+margin-left:10px;
+height:50px;
+}
+.btn:hover{
+    color:rgb(0, 179, 255);
+    text-decoration-line:underline;
+}
+.container{
+    background-color:  #2e2e2e;
+    height:640px;
+    padding-bottom:100px;
+   
+}
+.notice{
+    
+    margin:0px 0px;
+    width:100%;
+    height:40px;
+    overflow: hidden;
+    padding: 10px 0px;
+    color:white;
+    white-space: nowrap;
+    
+}
+ 
+
+
+.ani{
+    display: inline-block;
+    animation: 10s slide infinite linear;
+    margin:5px 0px;
+   
+}
+.notice:hover .ani{
+    animation-play-state: paused;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.items{
+    margin:10px 0px;
+    padding:10px;
+    width:99%;
+    height: 500px;
+
+}
+.items-1{
+    display:flex;
+    padding:10px 0px;
+    margin:0px 0px;
+    justify-content: center;
+   
+    
+
+}
+.items-2{
+    display:flex;
+    padding:10px 0px;
+    margin:0px 0px;
+    justify-content: center;
+    font-size: 20px;
+}
+.item-1{
+    width:33%;
+    height:200px;
+    margin:10px;
+    border:solid white 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.item-2{
+    width:33%;
+    height:200px;
+    margin:10px;
+    border:solid white 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.item-5{
+    width:33%;
+    height:200px;
+    margin:10px;
+    border:solid white 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.item-3{
+    width:33%;
+    height:200px;
+    margin:10px;
+    border:solid white 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.item-4{
+    width:33%;
+    height:200px;
+    margin:10px;
+    border:solid white 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.item-6{
+    width:33%;
+    height:200px;
+    margin:10px;
+    border:solid white 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.item-1 li{
+    margin:10px 45px;
+}
+.item-2 li{
+    margin:10px 45px;
+}
+.item-5 li{
+    margin:10px 45px;
+}
+.item-3 li{
+    margin:10px 45px;
+}
+.item-4 li{
+    margin:10px 45px;
+}
+.item-6 li{
+    margin:10px 45px;
+}
+.item-1 h1{
+    color: rgb(240, 240, 126);
+}
+.item-2 h1{
+    color: rgb(240, 240, 126);
+}
+.item-5 h1{
+    color: rgb(240, 240, 126);
+}
+.item-3 h1{
+    color: rgb(240, 240, 126);
+}
+.item-4 h1{
+    color: rgb(240, 240, 126);
+}
+.item-6 h1{
+    color: rgb(240, 240, 126);
+}
+.container-1{
+    height:500px;
+    width:100%;
+
+}
+.suggestion{
+    margin: 0px 10px;
+    border:5px solid white;
+    width:50%;
+}
+.suggestion h1{
+    margin:0px 250px;
+    color: white;
+    text-decoration: underline;
+    
+}
+
+.container2{
+    background-color: #2e2e2e;
+    margin:0px 0px;
+    display:flex;
+  
+}
+.suggestion p {
+    margin:0px 170px;
+    padding:10px;
+  
+}
+.main{
+    margin: 0px 10px;
+    border:5px solid white;
+    width:50%;
+}
+.main h1{
+    color:white;
+    margin:0px 300px;
+    text-decoration: underline;
+}
+.main p{
+    margin:30px 30px;
+    color:white;
+    display:list-item;
+    list-style: circle;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color:gold ;
+   
+}
+.footer p{
+    margin:0px 10px;
+    padding:10px 10px;
+    color:rgb(76, 109, 147);
+}
+.dropdown li{
+    justify-content: space-between;
+    display:inline-block;
+    background-color:white;
+}
+.dropdown{
+    background-color: black;
+}
